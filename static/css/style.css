@@ -427,3 +427,253 @@ footer {
         margin: 0 auto;
     }
 }
+
+
+/*user cuenta*/
+body {
+    background-color: #ffffff;
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-bottom: 70px; /* Espacio para la barra de navegación inferior fija */
+}
+
+/* ----------------------------------
+   Encabezado superior
+---------------------------------- */
+header {
+    padding: 12px 16px;
+    background-color: #ffffff;
+}
+
+.navegacion-superior {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.navegacion-superior button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+}
+
+.navegacion-superior button img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+/* Barra de búsqueda con bordes redondeados */
+.barra-busqueda {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    padding: 8px 16px;
+    gap: 8px;
+}
+
+.barra-busqueda img {
+    width: 18px;
+    height: 18px;
+    opacity: 0.6;
+}
+
+.barra-busqueda input {
+    border: none;
+    background: transparent;
+    width: 100%;
+    outline: none;
+    font-size: 14px;
+}
+
+/* ----------------------------------
+   Contenido principal
+---------------------------------- */
+main {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* Tarjeta de información del usuario */
+.tarjeta-usuario {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    grid-template-rows: auto auto auto;
+    column-gap: 16px;
+    align-items: center;
+}
+
+.imagen-perfil {
+    grid-row: 1 / span 3;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+
+.imagen-perfil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tarjeta-usuario p:first-of-type {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: -2px;
+}
+
+.tarjeta-usuario h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #111111;
+}
+
+.tarjeta-usuario p:last-of-type {
+    font-size: 13px;
+    color: #666666;
+    margin-top: 2px;
+}
+
+/* Lista de opciones del menú */
+.opciones-usuario ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.opciones-usuario a {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-decoration: none;
+    color: #333333;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.opciones-usuario img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+/* Sección de configuración (Tarjeta gris y Cerrar sesión) */
+.opciones-configuracion {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 8px;
+}
+
+.opcion-huella {
+    background-color: #f8f8f8;
+    border-radius: 12px;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 36px 1fr;
+    column-gap: 12px;
+    align-items: center;
+}
+
+.opcion-huella img {
+    grid-row: 1 / span 2;
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.titulo-opcion {
+    font-size: 13px;
+    font-weight: 600;
+    color: #222222;
+}
+
+.descripcion-opcion {
+    font-size: 11px;
+    color: #777777;
+    margin-top: 2px;
+}
+
+.opcion-cerrar-sesion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.opcion-cerrar-sesion img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.opcion-cerrar-sesion button {
+    background: none;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: #333333;
+    cursor: pointer;
+}
+
+/* ----------------------------------
+   Navegación inferior fija
+---------------------------------- */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    border-top: 1px solid #eeeeee;
+    z-index: 100;
+}
+
+.navegacion-inferior ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 6px 0;
+}
+
+.navegacion-inferior li {
+    flex: 1;
+}
+
+.navegacion-inferior a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #666666;
+    padding: 6px 0;
+    gap: 4px;
+    background-color: #f4f4f4; /* Fondo gris claro de los botones inferiores */
+    margin: 0 4px;
+    border-radius: 4px;
+}
+
+.navegacion-inferior img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.navegacion-inferior span {
+    font-size: 11px;
+}
