@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -436,7 +436,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    padding-bottom: 70px; /* Espacio para la barra de navegación inferior fija */
+    padding-bottom: 70px;
+    /* Espacio para la barra de navegación inferior fija */
 }
 
 /* ----------------------------------
@@ -663,7 +664,8 @@ footer {
     color: #666666;
     padding: 6px 0;
     gap: 4px;
-    background-color: #f4f4f4; /* Fondo gris claro de los botones inferiores */
+    background-color: #f4f4f4;
+    /* Fondo gris claro de los botones inferiores */
     margin: 0 4px;
     border-radius: 4px;
 }
@@ -675,5 +677,462 @@ footer {
 }
 
 .navegacion-inferior span {
+    font-size: 11px;
+}
+
+/*  Carrito*/
+
+
+/* El contenedor ocupa el 100% del ancho */
+.contenedor {
+    width: 100%;
+}
+
+/* Encabezado superior */
+.encabezado {
+    background-color: #eeeeee;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.atras {
+    position: absolute;
+    left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.encabezado h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+/* Pasos numerados repartidos en el centro */
+.pasos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 25px 0;
+}
+
+.paso {
+    text-align: center;
+}
+
+.circulo {
+    width: 26px;
+    height: 26px;
+    background-color: #dddddd;
+    border-radius: 50%;
+    margin: 0 auto;
+    line-height: 26px;
+    font-size: 13px;
+}
+
+.paso p {
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: 13px;
+}
+
+.linea {
+    width: 100px;
+    height: 1px;
+    background-color: #cccccc;
+}
+
+/* Caja de selección adaptada al ancho */
+.caja-productos {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.titulo {
+    margin: 0;
+    font-size: 14px;
+}
+
+.subtitulo {
+    margin-top: 4px;
+    margin-bottom: 0;
+    font-size: 12px;
+    color: #666666;
+}
+
+/* Separador hacia el pie */
+.separador {
+    margin-top: 150px;
+    margin-bottom: 20px;
+    border: 0;
+    height: 1px;
+    background-color: #eeeeee;
+}
+
+/* Sección inferior */
+.pie {
+    padding: 0 20px 20px 20px;
+}
+
+.pie p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333333;
+}
+
+/* Botón adaptable */
+.btn-continuar {
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    border-radius: 25px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+
+
+/*Belleza*/
+
+
+
+
+.contenedor {
+  width: 100%;
+}
+
+/* Encabezado superior */
+.encabezado {
+  background-color: #eeeeee;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.atras {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.encabezado h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.carrito {
+  font-size: 20px;
+}
+
+/* Cuerpo principal */
+.contenido {
+  padding: 20px;
+}
+
+/* Filas de 2 botones */
+.fila {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.caja-categoria {
+  width: 50%;
+  background-color: #f5f5f5;
+  padding: 18px 10px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Botón Ver más */
+.contenedor-boton {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.btn-ver-mas {
+  background-color: #f5f5f5;
+  border: none;
+  padding: 10px 45px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Títulos de secciones */
+.titulo-seccion {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  color: #333333;
+}
+
+.caja-marca {
+  width: 50%;
+  height: 60px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+/* Menú de navegación inferior */
+.menu-inferior {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 20px;
+  background-color: #ffffff;
+  margin-top: 30px;
+}
+
+.item-menu {
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+  width: 20%;
+}
+
+.icono {
+  font-size: 16px;
+}
+
+.item-menu p {
+  margin-top: 4px;
+  margin-bottom: 0;
+  font-size: 11px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*cupones*/
+
+
+.contenedor {
+    width: 100%;
+}
+
+/* Encabezado gris */
+.caja-encabezado {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.header-titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-titulo h2 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.carrito {
+    font-size: 24px;
+}
+
+.info-cupones {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.icono-cupon {
+    font-size: 24px;
+}
+
+.pregunta {
+    margin: 0;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.explicacion {
+    margin: 0;
+    font-size: 13px;
+    color: #444444;
+}
+
+/* Sección central con tarjetas */
+.contenido {
+    padding: 20px;
+}
+
+.titulo-seccion {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+/* Tarjeta del cupón */
+.tarjeta-cupon {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.fila-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.codigo-cupon {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.btn-usar {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 6px 15px;
+    border-radius: 15px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.descripcion {
+    font-size: 12px;
+    color: #444444;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.contenedor-vencimiento {
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.vencimiento {
+    background-color: #e8e8e8;
+    padding: 6px 16px;
+    border-radius: 15px;
+    font-size: 11px;
+    color: #333333;
+}
+
+.separador-tarjeta {
+    border: 0;
+    height: 1px;
+    background-color: #ffe5e5;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+.terminos {
+    margin: 0;
+    font-size: 12px;
+    color: #555555;
+}
+
+/* Menú inferior */
+.menu-inferior {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 20px;
+    background-color: #ffffff;
+    margin-top: 30px;
+}
+
+.item-menu {
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+    width: 20%;
+}
+
+.icono {
+    font-size: 16px;
+}
+
+.item-menu p {
+    margin-top: 4px;
+    margin-bottom: 0;
     font-size: 11px;
 }
